@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- for optimal display on high DPI devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Sphere Viewer</title>
+    <link rel="stylesheet" href="node_modules/@photo-sphere-viewer/core/index.css" />
+</head>
+<body>
+    <!-- the viewer container must have a defined size -->
+    <div id="viewer" style="width: 50vw; height: 50vh;"></div>
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "./node_modules/three/build/three.module.js",
+            "@photo-sphere-viewer/core": "./node_modules/@photo-sphere-viewer/core/index.module.js"
+        }
+    }
+    </script>
+
+    <script type="module">
+        import { Viewer } from '@photo-sphere-viewer/core';
+
+        const viewer = new Viewer({
+            container: document.querySelector('#viewer'),
+            panorama: 'photo2.JPG'  // 替换为你360度全景照片的路径
+            
+            
+            
+   
+            
+            
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
